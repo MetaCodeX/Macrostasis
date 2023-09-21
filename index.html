@@ -31,18 +31,19 @@
     <h5>Vosmet vetat res coelica</h5>
 </div>
 <audio id="miAudio" loop>
-    <source src="https://raw.githubusercontent.com/carlosjuarex/Macrostasis/main/wind.mp3">
-    Your browser does not support the audio element.
-  </audio>
-  
-  <button onclick="playAudio()">Reproducir</button>
-  
-  <script>
-  function playAudio() {
-    var miAudio = document.getElementById('miAudio');
+  <source src="https://raw.githubusercontent.com/carlosjuarex/Macrostasis/main/wind.mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var miAudio = document.getElementById('miAudio');
+
+  document.addEventListener('click', function() {
     miAudio.play();
-  }
-  </script>
+  });
+});
+</script>
 
 </body>
 </html>
