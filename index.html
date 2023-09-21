@@ -30,10 +30,19 @@
     <br>
     <h5>Vosmet vetat res coelica</h5>
 </div>
-<audio autoplay loop>
-  <source src="wind.mp3">
-  Your browser does not support the audio element.
-</audio>
+<audio id="miAudio" loop>
+    <source src="https://raw.githubusercontent.com/carlosjuarex/Macrostasis/main/wind.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <button onclick="playAudio()">Reproducir</button>
+  
+  <script>
+  function playAudio() {
+    var miAudio = document.getElementById('miAudio');
+    miAudio.play();
+  }
+  </script>
 
 </body>
 </html>
