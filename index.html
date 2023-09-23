@@ -24,34 +24,28 @@ color: #ffffff;
     font-family: "Lucida Console", "Courier New", monospace;
     text-align:center; margin-top:20px;
   }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .info {
     color: #ffffff;
-  font-family: "Lucida Console", "Courier New", monospace;
-  margin-left:20px;
-margin-right: 40px;
-  text-align: justify;
-  float: left; /* Hace que el elemento se sitúe a la izquierda */
-  width: 40%; /* Establece el ancho del elemento (puede ajustarse según sea necesario) */
-}
-.info2 {
-  color: #ffffff;
-  font-family: "Lucida Console", "Courier New", monospace;
-  margin-left: 40px;
-
- margin-right: 40px;
-margin-bottom: 50px; /* Agregamos margen inferior */
-  text-align: justify;
-  float: right; /* Hace que el elemento se sitúe a la derecha */
-  width: 40%; /* Establece el ancho del elemento (puede ajustarse según sea necesario) */
-}
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: justify;
+    width: 180%;
+    margin-left: 25px;
+  margin-right: 25px;
+  }
 
 .equals {
 text-align:center;
   color: #fff;
   font-family: "Lucida Console", "Courier New", monospace;
   margin-bottom: 80px; /* Agregamos margen inferior */
-padding: 70px;
-margin-top: 20px;
+margin-top: 0px;
 }
 
 </style>
@@ -66,24 +60,28 @@ margin-top: 20px;
 </div>
 
 
-<div class="info"> 
-  <h3>What Is this?</h3>
-  <h4>This is nothing more than a liminal
-     space never finished, full of
+<div class="container">
+  <div class="info">
+    <h3>What Is this?</h3>
+    <h4>This is nothing more than a liminal
+      space never finished, full of
       thoughts and ideas that were forgotten,
-       immersed in infinite stars until
-        we reach this place, although not 
-        everything will be like this forever,
-         one day I will see the light.</h4>
-  
+      immersed in infinite stars until
+      we reach this place, although not
+      everything will be like this forever,
+      one day I will see the light.
+    </h4>
   </div>
-<div class="info2">
-  <br>  <h3>WHy?</h3>
-  <h5>There are many ideas to reflect that could
-    come to exist, different times in the past
-    that I experienced and that I will be the only
-     one to remember, this site is to capture my
-      final idea, the MacroStasis®</h5>
+
+  <div class="info2">
+    <h3>WHy?</h3>
+    <h4>There are many ideas to reflect that could
+      come to exist, different times in the past
+      that I experienced and that I will be the only
+      one to remember, this site is to capture my
+      final idea, the MacroStasis®
+    </h4>
+  </div>
 </div>
 
 <audio id="miAudio" loop>
@@ -102,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-<br><br><br><br><br><br><br><br><h5 class="equals">= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</h5>
+<br><br><h5 class="equals">= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</h5>
 
 </body>
 </html>
