@@ -183,7 +183,12 @@ margin-top: 0px;
   <source src="https://raw.githubusercontent.com/carlosjuarex/Macrostasis/main/wind.mp3">
   Your browser does not support the audio element.
 </audio>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var miAudio = document.getElementById('miAudio');
+    miAudio.volume = 0.2; // Establece el volumen al 50% (0.0 - 1.0)
+  });
+</script>
 
 
 <script>
