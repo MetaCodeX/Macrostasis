@@ -23,7 +23,6 @@ window.onload = function() {
     }, false);
   });
   
-  
   document.addEventListener('DOMContentLoaded', function() {
     var miAudio = document.getElementById('miAudio');
     miAudio.volume = 0.3; // Establece el volumen al 50% (0.0 - 1.0)
