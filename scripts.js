@@ -14,7 +14,7 @@ window.onload = function() {
   
   document.addEventListener('DOMContentLoaded', function() {
     var miAudio = document.getElementById('miAudio');
-    miAudio.volume = 0.1; // Establece el volumen al 50% (0.0 - 1.0)
+    miAudio.volume = 0.3; // Establece el volumen al 50% (0.0 - 1.0)
   });
   
   document.addEventListener('DOMContentLoaded', function() {
