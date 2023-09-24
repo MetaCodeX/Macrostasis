@@ -35,6 +35,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
   toggleVideoVisibility(); // Inicia el ciclo de desvanecimiento
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var videoBackground = document.getElementById('videoBackground');
+    videoBackground.volume = 0.5; // Ajusta el volumen del video si lo deseas
+
+    videoBackground.addEventListener('ended', function() {
+        this.currentTime = 0; // Reinicia el video al principio cuando termina
+        this.play();
+    }, false);
+
+    // Comprueba si el video se ha detenido y lo reanuda si es necesario
+    setInterval(function() {
+        if (videoBackground.paused) {
+            videoBackground.play();
+        }
+    }, 1000); // Comprueba cada segundo
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
