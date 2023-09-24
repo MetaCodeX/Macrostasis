@@ -1,0 +1,137 @@
+
+body {
+  background-color: #000000;
+color: #ffffff;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.texto-blanco {
+  color: #fff; /* Color de texto blanco */
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align:center; margin-top:20px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.info {
+  color: #ffffff;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: justify;
+  width: 200%;
+  margin-left: 20px;
+margin-right: 20px;
+}
+
+.info2 {
+  color: #ffffff;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: justify;
+  width: 200%;
+  margin-left: 20px;
+margin-right: 20px;
+}
+.equals {
+text-align:center;
+color: #fff;
+font-family: "Lucida Console", "Courier New", monospace;
+margin-bottom: 10px; /* Agregamos margen inferior */
+margin-top: 0px;
+}
+.lorem{
+text-align:center;
+color: #fff;
+font-family: "Lucida Console", "Courier New", monospace;
+margin-left : 50px;
+margin-right : 50px;
+
+}
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.custom-button:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+
+.contenedor {
+  display: flex;
+  height: 100%;
+}
+
+.rectangulo20 {
+  width: 30%;
+  background-color: transparent;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.rectangulo80 {
+  width: 70%;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+iframe {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+    z-index: 1; /* Asegura que el contenido del iframe esté sobre el video */
+}
+
+/*<!--Modificar desde aqui hasta arriba, todo esta perfecto apartir de aqui, con amor... yo <3-->*/
+
+#videoContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; /* Inicia transparente */
+  transition: opacity 2s; /* Agrega una transición de 2 segundos */
+}
+
+#videoOverlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  animation: fadeOut 2s 2s forwards; /* Inicia con opacidad y se desvanece después de 2 segundos */
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; }
+}

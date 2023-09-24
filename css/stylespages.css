@@ -1,0 +1,11 @@
+body {
+  background-color: transparent;
+color: #ffffff;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.texto-blanco {
+  color: #fff; /* Color de texto blanco */
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align:center; margin-top:20px;
+}
