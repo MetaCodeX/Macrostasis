@@ -73,7 +73,7 @@ margin-right : 50px;
 
 #videoContainer {
   position: fixed;
-  right: 0;
+  right: 10%;
   bottom: 0;
   min-width: 105%;
   min-height: 100%;
