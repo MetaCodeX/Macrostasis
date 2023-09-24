@@ -6,20 +6,22 @@ window.onload = function() {
   document.addEventListener('DOMContentLoaded', function() {
     var videoContainer = document.getElementById('videoContainer');
     var initialOffset = videoContainer.offsetTop;
-  
+
     window.addEventListener('scroll', function() {
-      var scrollDistance = window.pageYOffset;
-  
-      videoContainer.style.top = initialOffset - scrollDistance + 'px';
+        var scrollDistance = window.pageYOffset;
+
+        videoContainer.style.top = initialOffset - scrollDistance + 'px';
     });
-  });
-  document.addEventListener('DOMContentLoaded', function() {
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     var videoBackground = document.getElementById('videoBackground');
     videoBackground.addEventListener('ended', function() {
-      this.currentTime = 0;
-      this.play();
+        this.currentTime = 0;
+        this.play();
     }, false);
-  });
+});
+
   
   document.addEventListener('DOMContentLoaded', function() {
     var miAudio = document.getElementById('miAudio');
