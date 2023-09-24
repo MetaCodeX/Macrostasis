@@ -117,14 +117,14 @@ margin-right : 50px;
 }
 
 .rectangulo20 {
-  width: 20%;
+  width: 30%;
   background-color: transparent;
   padding: 10px;
   box-sizing: border-box;
 }
 
 .rectangulo80 {
-  width: 80%;
+  width: 70%;
   background-color: transparent;
   box-sizing: border-box;
 }
