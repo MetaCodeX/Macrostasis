@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
       miAudio.play();
     });
   });
+  
   function cargarPagina(pagina) {
     document.getElementById('contenido').src = pagina;
+    event.preventDefault(); // Evitar que la página se recargue
 }
