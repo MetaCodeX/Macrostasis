@@ -18,6 +18,4 @@ document.addEventListener('DOMContentLoaded', function() {
     index = (index + 1) % carruselImages.length;
     showImage(index);
   }
-
-  setInterval(nextImage, 5000); // Cambia la imagen cada 5 segundos (5000 milisegundos)
 });
