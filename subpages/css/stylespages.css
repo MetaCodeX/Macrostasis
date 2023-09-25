@@ -17,12 +17,14 @@ font-family: "Lucida Console", "Courier New", monospace;
 .carrusel {
   display: flex;
   animation: desplazamiento 10s linear infinite;
+  animation-duration: 15s;
 }
 
 .carrusel img {
-  width: 20%; /* Ajusta el tamaño de las imágenes según tus preferencias */
+  width: 15%; /* Ajusta el tamaño de las imágenes según tus preferencias */
   height: auto;
   object-fit: cover; /* Asegura que las imágenes cubran completamente el contenedor */
+  margin-right: 10px; /* Ajusta el valor según tu preferencia */
 }
 
 @keyframes desplazamiento {

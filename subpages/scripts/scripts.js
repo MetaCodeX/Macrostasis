@@ -9,3 +9,27 @@ function cargarPagina(pagina) {
   event.preventDefault(); // Evitar que la página se recargue
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Tu código adicional para el carrusel
+  var miAudio = document.getElementById('miAudio');
+  miAudio.volume = 0.3;
+
+  miAudio.addEventListener('play', function() {
+    var videoBackground = document.getElementById('videoBackground');
+    videoBackground.play();
+  });
+
+  var carruselImages = document.querySelectorAll('.carrusel img');
+  carruselImages.forEach(function(img, index) {
+    if (index !== carruselImages.length - 1) {
+      img.addEventListener('animationiteration', function() {
+        carruselImages[index + 1].style.opacity = 1;
+      });
+    }
+  });
+});
+
+document.addEventListener('click', function() {
+  var miAudio = document.getElementById('miAudio');
+  miAudio.play();
+});
