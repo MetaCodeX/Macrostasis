@@ -9,3 +9,18 @@ font-family: "Lucida Console", "Courier New", monospace;
   font-family: "Lucida Console", "Courier New", monospace;
   text-align:center; margin-top:20px;
 }
+#carousel {
+  overflow: hidden;
+  width: 300px; /* Ancho del carrusel */
+  height: 200px; /* Altura del carrusel */
+}
+
+.slide {
+  float: left;
+  width: 100%;
+  transition: transform 0.5s ease-in-out; /* Transición suave entre slides */
+}
+
+img {
+  width: 100%; /* Ajusta el tamaño de la imagen */
+}
