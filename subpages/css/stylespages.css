@@ -12,10 +12,13 @@ font-family: "Lucida Console", "Courier New", monospace;
 .carrusel-container {
   width: 100%;
   overflow: hidden;
+  position: relative;
+  max-width: 100%;
 }
 
 .carrusel {
   display: flex;
+  transition: transform 1s ease;
   animation: desplazamiento 10s linear infinite;
   animation-duration: 15s;
 }

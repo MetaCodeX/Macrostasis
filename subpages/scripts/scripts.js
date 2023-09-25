@@ -19,17 +19,21 @@ document.addEventListener('DOMContentLoaded', function() {
     videoBackground.play();
   });
 
-  var carruselImages = document.querySelectorAll('.carrusel img');
-  carruselImages.forEach(function(img, index) {
-    if (index !== carruselImages.length - 1) {
-      img.addEventListener('animationiteration', function() {
-        carruselImages[index + 1].style.opacity = 1;
+  document.addEventListener('DOMContentLoaded', function() {
+    var carruselImages = document.querySelectorAll('.carrusel img');
+    var index = 0;
+  
+    function showImage(indexToShow) {
+      carruselImages.forEach(function(img, i) {
+        img.style.opacity = (i === indexToShow) ? 1 : 0;
       });
     }
+  
+    function nextImage() {
+      index = (index + 1) % carruselImages.length;
+      showImage(index);
+    }
+  
+    setInterval(nextImage, 5000); // Cambia la imagen cada 5 segundos (5000 milisegundos)
   });
-});
-
-document.addEventListener('click', function() {
-  var miAudio = document.getElementById('miAudio');
-  miAudio.play();
-});
+  
