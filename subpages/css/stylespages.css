@@ -9,19 +9,27 @@ font-family: "Lucida Console", "Courier New", monospace;
   font-family: "Lucida Console", "Courier New", monospace;
   text-align:center; margin-top:20px;
 }
-#carousel {
-  overflow: hidden;
-  width: 300px; /* Ancho del carrusel */
-  height: 200px; /* Altura del carrusel */
-}
-
-.slide {
-  float: left;
+.carrusel-container {
   width: 100%;
-  transition: transform 0.5s ease-in-out; /* Transición suave entre slides */
+  overflow: hidden;
 }
 
-.slide img {
-  max-width: 250px;
-  height: auto; /* Esto asegura que la proporción se mantenga */
+.carrusel {
+  display: flex;
+  animation: desplazamiento 10s linear infinite;
+}
+
+.carrusel img {
+  width: 20%; /* Ajusta el tamaño de las imágenes según tus preferencias */
+  height: auto;
+  object-fit: cover; /* Asegura que las imágenes cubran completamente el contenedor */
+}
+
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
