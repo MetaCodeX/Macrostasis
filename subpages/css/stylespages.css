@@ -21,6 +21,7 @@ font-family: "Lucida Console", "Courier New", monospace;
   transition: transform 0.5s ease-in-out; /* Transición suave entre slides */
 }
 
-img {
-  width: 100%; /* Ajusta el tamaño de la imagen */
+.slide img {
+  max-width: 250px;
+  height: auto; /* Esto asegura que la proporción se mantenga */
 }
