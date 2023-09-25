@@ -13,9 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
       img.style.opacity = (i === indexToShow) ? 1 : 0;
     });
   }
-
-  function nextImage() {
-    index = (index + 1) % carruselImages.length;
-    showImage(index);
-  }
-});
+  
+function nextImage() {
+  index = (index + 1) >= carruselImages.length ? 0 : index + 1;
+  showImage(index);
+}
