@@ -24,7 +24,7 @@ font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .carrusel img {
-  width: 15%; /* Ajusta el tamaño de las imágenes según tus preferencias */
+  width: 30%; /* Ajusta el tamaño de las imágenes según tus preferencias */
   height: auto;
   object-fit: cover; /* Asegura que las imágenes cubran completamente el contenedor */
   margin-right: 10px; /* Ajusta el valor según tu preferencia */

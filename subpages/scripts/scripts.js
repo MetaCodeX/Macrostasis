@@ -4,36 +4,20 @@ window.onload = function() {
   }
 }
 
-function cargarPagina(pagina) {
-  document.getElementById('contenido').src = pagina;
-  event.preventDefault(); // Evitar que la página se recargue
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-  // Tu código adicional para el carrusel
-  var miAudio = document.getElementById('miAudio');
-  miAudio.volume = 0.3;
+  var carruselImages = document.querySelectorAll('.carrusel img');
+  var index = 0;
 
-  miAudio.addEventListener('play', function() {
-    var videoBackground = document.getElementById('videoBackground');
-    videoBackground.play();
-  });
+  function showImage(indexToShow) {
+    carruselImages.forEach(function(img, i) {
+      img.style.opacity = (i === indexToShow) ? 1 : 0;
+    });
+  }
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var carruselImages = document.querySelectorAll('.carrusel img');
-    var index = 0;
-  
-    function showImage(indexToShow) {
-      carruselImages.forEach(function(img, i) {
-        img.style.opacity = (i === indexToShow) ? 1 : 0;
-      });
-    }
-  
-    function nextImage() {
-      index = (index + 1) % carruselImages.length;
-      showImage(index);
-    }
-  
-    setInterval(nextImage, 5000); // Cambia la imagen cada 5 segundos (5000 milisegundos)
-  });
-  
+  function nextImage() {
+    index = (index + 1) % carruselImages.length;
+    showImage(index);
+  }
+
+  setInterval(nextImage, 5000); // Cambia la imagen cada 5 segundos (5000 milisegundos)
+});
